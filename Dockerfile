@@ -7,7 +7,7 @@ COPY app/ ./app/
 COPY tests/ ./tests/
 RUN python -m pytest tests/ -v --tb=short
 
-# Stage 2: lean production image — no test tools included
+# Stage 2: lean production image — no test tools includedd
 FROM python:3.11-slim AS production
 RUN groupadd -r appuser && useradd -r -g appuser appuser
 WORKDIR /app
