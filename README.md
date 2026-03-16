@@ -15,7 +15,7 @@
 ### Step 1 — Edit Jenkinsfile
 Replace `YOUR_DOCKERHUB_USERNAME` on line 6 with your Docker Hub username.
 
-### Step 2 — Jenkins EC2 (t2.medium, Amazon Linux 2)
+### Step 2 — Jenkins EC2 (t2.medium, Amazon Linux 2) 
 ```bash
 sudo yum update -y
 sudo yum install java-11-amazon-corretto git docker -y
@@ -84,7 +84,7 @@ git add . && git commit -m "trigger pipeline" && git push origin main
 7. If anything fails → auto-rollback to previous build
 ========
 
-this is to check webhook working
+this is to check webhook working and this is final commit
 
 
 =======
